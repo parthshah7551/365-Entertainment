@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365 Entertainment Portal</title>
+    <link rel="icon" href="Images/365ep.jpg" type="image/jpg">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="movies.css">
+    <script src="movies.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li class="item"></li>
+                    <a href="index.html"><img id="logo" src="Images/365ep.jpg " alt="365 Entertainment Portal"></a>
+                    </li>
+                    <li class="item"><a class="links text" href="movies.html">Movies</a></li>
+                    <li class="item"><a class="links text" href="#tv_series">TV Series</a></li>
+                    <li class="item"><a class="links text" href="#audio">Audio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+
+            <div class="headsection">
+
+                <div class="slideshow">
+
+
+                    <div class="slides">
+                        <img src="Images/c-mortal-combat.jpg" alt="c-mortal-combat">
+                    </div>
+                    <div class="slides">
+                        <img src="Images/c-venom.jpg" alt="c-venom">
+                    </div>
+                    <div class="slides">
+                        <img src="Images/img3.jpg" alt="c-eternals">
+                    </div>
+                    <div class="slides">
+                        <img src="Images/img4.jpeg" alt="house">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn"><span id="genreText">Genre</span><i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a onclick="getMediaPosters(this.text)">All</a>
+                    <a onclick="getMediaPosters(this.text)">Action</a>
+                    <a onclick="getMediaPosters(this.text)">Drama</a>
+                    <a onclick="getMediaPosters(this.text)">Sci-Fi</a>
+                </div>
+            </div>
+
+            <div class="searchbar">
+                <form onsubmit="javascript:return false;">
+                    <input type=" text " class="inputsearch search-query " placeholder="Search yout favourit movie title ">
+                    <div class="searchbarbutton ">
+                        <button type="submit" onclick="updateResults()"><i class="fa fa-search fa-2x "></i></button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="container1 ">
+
+                <!-- 1st part -->
+
+                <div class="containeraction">
+                    <div class="border"></div>
+                    <div class="images ">
+                        <img src="Images/Mortal-Combat-thum.jpg " alt="Moral Combat" class="actionimg ">
+                        <div class="imgtext "><b>Moral Combat</b><br>Action, Adventure , Fantasy</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/Nobody-thum.jpg " alt="Nobody " class="actionimg ">
+                        <div class="imgtext"><b> Nobody</b><br>Peice of Action, Crime and Drama</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/Shawshank-thum.jpg " alt="Shawshank " class="actionimg ">
+                        <div class="imgtext"><b> Shawshank</b><br> Film on two ex-prisoner's redemption</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/venom-thum.jpg " alt="Venom " class="actionimg ">
+                        <div class="imgtext"><b>Venom</b><br> Sequel to the 2018 film 'Venom'</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/action/img15.jpeg " alt="Doctor Strange " class="actionimg ">
+                        <div class="imgtext "><b>Doctor Strange</b><br>Based on the Marvel Comics character</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/Wrath-of-man-thum.jpg " alt="Wrath of Man " class="actionimg ">
+                        <div class="imgtext "><b>Wrath of Man</b><br>Thriller by Guy Ritche</div>
+                    </div>
+
+                    <!-- 2nd Part -->
+
+                    <div class="images ">
+                        <img src="Images/action/search_and_destroy.jpeg" alt="search_and_destroy" class="actionimg ">
+                        <div class="imgtext "><b>Search and destroy</b><br>Action and Thriller</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/action/tiger.jpeg" alt="tiger" class="actionimg ">
+                        <div class="imgtext "><b>Tiger zinda hai</b><br>Sequel based on 2014 action movie</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/action/drive_angry.jpeg" alt="drive_angry" class="actionimg ">
+                        <div class="imgtext "><b>Drive angry</b><br> Action movie</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/action/bleeding_steel.jpeg" alt="bleeding_steel " class="actionimg ">
+                        <div class="imgtext "><b>Bleeding steel</b><br>Hollywood action movie</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/action/snitch.jpeg " alt="snitch" class="actionimg ">
+                        <div class="imgtext "><b>Snitch</b><br>Hollywood thriller movie</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/action/exctration.jpeg " alt="exctration " class="actionimg ">
+                        <div class="imgtext "><b>Exctration</b><br> Hollywood action movie</div>
+                    </div>
+                </div>-->
+
+                <!-- 3rd Part -->
+
+                <div class="containerdrama ">
+                    <div class="border "></div>
+                    <div class="images ">
+                        <img src="Images/d-parasite.jpg " alt="Parasite " class="actionimg ">
+                        <div class="imgtext "><b>Parasite</b><br>Drama ,Mystery and Thriller</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/d-Avengers-End-Game.jpg " alt="Av:Endgame " class="actionimg ">
+                        <div class="imgtext "><b>Av:Endgame</b><br>Adventure/Sci-fi</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/d-lady-bird.jpg " alt="LADY BIRD " class="actionimg ">
+                        <div class="imgtext "><b>Lady Bird</b><br> Drama, Comedy</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/d-mi-fallout.jpg " alt="MI : FALLOUT " class="actionimg ">
+                        <div class="imgtext "><b>MI : Fallout</b><br>Adventure ,Mystery and Thriller </div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/d-the-irishman.jpg " alt="THE IRISHMAN " class="actionimg ">
+                        <div class="imgtext "><b>The Irishman</b><br>Drama ,Crime</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/d-the-godfather.jpg " alt="THE GODFATHER " class="actionimg ">
+                        <div class="imgtext "><b>The Godfather</b><br> Drama ,Crime</div>
+                    </div>
+
+                    <!-- 4nd Part -->
+
+                    <div class="images ">
+                        <img src="Images/drama/chhichhore.jpeg" alt="Chhichhore" class="actionimg ">
+                        <div class="imgtext "><b>Chhichhore</b><br>Based on hostel life</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/drama/cityofdreams.jpeg" alt="City of dreams" class="actionimg ">
+                        <div class="imgtext "><b>City of dreams</b><br>Hotstar special drama series</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/drama/criminal.jpeg" alt="Criminal Justice" class="actionimg ">
+                        <div class="imgtext "><b>Criminal Justice</b><br>Hotstar Special</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/drama/dilbichara.jpeg" alt="Dill Bechara" class="actionimg ">
+                        <div class="imgtext "><b>Dill Bechara</b><br>Bollywood love story</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/drama/lunch.jpeg" alt="Lunch Stories" class="actionimg ">
+                        <div class="imgtext "><b>Lunch Stories</b><br>Story about female freedom</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/drama/rista.jpeg" alt="Ye rista kya kahlata hai" class="actionimg ">
+                        <div class="imgtext "><b>Ye rista kya kahlata hai</b><br>Tv Serial</div>
+                    </div>
+
+
+                </div>
+
+                <!-- 5th Part -->
+
+                <div class="containerscifi ">
+                    <div class="border "></div>
+                    <div class="images ">
+                        <img src="Images/s-black-panther.jpg " alt="BLACK PANTHER " class="actionimg ">
+                        <div class="imgtext "><b>BLACK PANTHER</b><br>Adventure ,Fantasy</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/s-toy-story-4.jpg " alt="TOY STORY 4 " class="actionimg ">
+                        <div class="imgtext "><b>TOY STORY 4</b><br>Comedy ,Adventure</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/s-mad-max.jpg " alt="MAD MAX " class="actionimg ">
+                        <div class="imgtext "><b>MAD MAX</b><br> Adventure ,Action</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/s-spider-verse.jpg " alt="SM : INTO THE SPIDER-VERSE " class="actionimg ">
+                        <div class="imgtext "><b>SM : INTO THE SPIDER-VERSE</b><br>Comedy ,Animation</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/s-shape-of-water.jpg " alt="THE SHAPE OF WATER " class="actionimg ">
+                        <div class="imgtext "><b>THE SHAPE OF WATER</b><br>Romance ,Fantasy</div>
+                    </div>
+                    <div class="images ">
+                        <img src="Images/c-star-wars.jpg " alt="SW : The LAST JEDI " class="actionimg ">
+                        <div class="imgtext "><b>SW : The LAST JEDI</b><br> Sci-Fi ,Adventure</div>
+                    </div>
+
+                    <!-- 6th Part -->
+
+                    <div class="images">
+                        <img src="Images/scifi/invasion.jpeg" alt="Invesion " class="actionimg ">
+                        <div class="imgtext"><b>Invesion</b><br>2007 American science fiction horror film</div>
+                    </div>
+                    <div class="images">
+                        <img src="Images/scifi/freaks.jpeg" alt="Freaks " class="actionimg ">
+                        <div class="imgtext"><b>Freaks</b><br>American-Canadian science fiction thriller film</div>
+                    </div>
+                    <div class="images">
+                        <img src="Images/scifi/tron.jpeg" alt="Tron " class="actionimg ">
+                        <div class="imgtext"><b>Tron</b><br> 2010 American science fiction action film </div>
+                    </div>
+                    <div class="images">
+                        <img src="Images/scifi/projectithica.jpeg" alt="Projec Ethaca " class="actionimg ">
+                        <div class="imgtext"><b>Projec Ethaca</b><br>T2019 Canadian science fiction thriller film wedf</div>
+                    </div>
+                    <div class="images">
+                        <img src="Images/scifi/pandorum.jpeg" alt="Pandorum " class="actionimg ">
+                        <div class="imgtext"><b>Pandorum</b><br> 2009 British-German science fiction horror film</div>
+                    </div>
+                    <div class="images">
+                        <img src="Images/scifi/Avatar.jpeg" alt="Avatar " class="actionimg ">
+                        <div class="imgtext"><b>Avatar</b><br>2009 American epic science fiction film</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer ">
+                <a href="index.html "><img class="logo1 " src="Images/365ep.jpg " alt="365 Entertainment Portal "></a>
+                <div class="bottomtext ">Powered by 365 Entertainment Portal 2019. All Rights Reserved.</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

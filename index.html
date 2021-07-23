@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365 Entertainment Portal</title>
+    <link rel="Stylesheet" href="index.css">
+    <link rel="icon" href="Images\365ep.jpg" type="image/jpg">
+</head>
+<script>
+    var slideIndex = 0;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slidess = document.getElementsByClassName("slides");
+        if (n > slidess.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slidess.length
+        }
+        for (i = 0; i < slidess.length; i++) {
+            slidess[i].style.display = "none";
+        }
+        slidess[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+
+
+<body>
+    <div class="container">
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li class="item"></li>
+                    <a href=""><img id="logo" src="Images\365ep.jpg " alt="365 Entertainment Portal"></a>
+                    </li>
+                    <li class="item"><a class="links text" href="movies.html">Movies</a></li>
+                    <li class="item"><a class="links text" href="#tv_series">TV Series</a></li>
+                    <li class="item"><a class="links text" href="#audio">Audio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+
+            <div class="headsection">
+
+                <div class="slideshow">
+
+
+                    <div class="slides">
+                        <img src="Images/c-mortal-combat.jpg" alt="c-mortal-combat">
+                    </div>
+                    <div class="slides">
+                        <img src="Images/c-venom.jpg" alt="c-venom">
+                    </div>
+                    <div class="slides">
+                        <img src="Images/img4.jpeg" alt="house">
+                    </div>
+                    <div class="slides">
+                        <img src="Images/c-eternals.jpg" alt="c-eternals">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="containeraction">
+                    <div class="headings">
+                        <h1>Popular in Action</h1>
+                        <div class="border"></div>
+                        <div class="images">
+                            <img src="Images\action\img11.jpeg" alt="Tanhaji" class="actionimg">
+                            <div class="imgtext"><b>Tanhaji</b><br>The Unsung Warrior</div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/action/img12.jpeg" alt="Special Ops" class="actionimg">
+                            <div class="imgtext"><b>Special Ops</b><br>A military unit trained to carry out special operations</div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/action/img13.jpeg" alt="Captain America" class="actionimg">
+                            <div class="imgtext"><b>Captain America</b><br> Based on the Marvel Comics character</div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/action/img14.jpeg" alt="Baaghi 3" class="actionimg">
+                            <div class="imgtext"><b>Baaghi 3</b><br>2020 Indian Hindi-language action thriller film </div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/action/img15.jpeg" alt="Doctor Strange" class="actionimg">
+                            <div class="imgtext"><b>Doctor Strange</b><br>Based on the Marvel Comics character</div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/action/img16.jpeg" alt="Akira" class="actionimg">
+                            <div class="imgtext"><b>Akira</b><br> 2016 Indian Hindi-language action crime thriller film</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerdrama">
+                    <div class="headings">
+                        <h1>Popular in Action</h1>
+                        <div class="border"></div>
+                        <div class="images">
+                            <img src="Images/drama/img21.jpeg" alt="Anupama" class="actionimg">
+                            <div class="imgtext"><b>Anupama</b><br> Indian drama television series </div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/drama/img22.jpeg" alt="Aquaman" class="actionimg">
+                            <div class="imgtext"><b>Aquaman</b><br>Thriller, Mystery & Comedy.</div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/drama/img23.jpeg" alt="Game Of Thrones" class="actionimg">
+                            <div class="imgtext"><b>Game Of Thrones</b><br>an American fantasy drama television series</div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/drama/img24.jpeg" alt="Criminal Justice" class="actionimg">
+                            <div class="imgtext"><b>Criminal Justice</b><br>Hindi-language crime thriller legal drama web series </div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/drama/img25.jpeg" alt="The Big Bull" class="actionimg">
+                            <div class="imgtext"><b>The Big Bull</b><br>Indian Hindi-language crime drama film </div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/drama/img26.jpeg" alt="Mulan" class="actionimg">
+                            <div class="imgtext"><b>Mulan</b><br>2020 American fantasy action drama film </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerscifi">
+                    <div class="headings">
+                        <h1>Popular in Sci-Fi</h1>
+                        <div class="border"></div>
+                        <div class="images">
+                            <img src="Images/scifi/img31.jpeg" alt="Superman" class="actionimg">
+                            <div class="imgtext"><b>Superman</b><br> Indian comedy & Romance </div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/scifi/img32.jpeg" alt="First Five" class="actionimg">
+                            <div class="imgtext"><b>First Five</b><br>South Korean Entertainment.</div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/scifi/img33.jpeg" alt="Red Wars" class="actionimg">
+                            <div class="imgtext"><b>Red Wars</b><br>Chinese crime thriller</div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/scifi/img34.jpeg" alt="Florida" class="actionimg">
+                            <div class="imgtext"><b>Florida</b><br>Documentary eastern eravel. </div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/scifi/img35.jpeg" alt="That Thing" class="actionimg">
+                            <div class="imgtext"><b>That Thing</b><br>Thriller Romance Drama film.</div>
+                        </div>
+                        <div class="images">
+                            <img src="Images/scifi/img36.jpeg" alt="Shrooms" class="actionimg">
+                            <div class="imgtext"><b>Shrooms</b><br>A Marvel Comics superhero team.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer">
+                        <a href="index.html"><img class="logo1" src="Images\365ep.jpg  " alt="365 Entertainment Portal"></a>
+                        <div class="bottomtext">Powered by 365 Entertainment Portal 2019. All Rights Reserved.</div>
+                    </div>
+                </footer>
+            </div>
+
+            <script type="text/javascript" src="movies.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $("body").on("contextmenu", function(e) {
+                        return false;
+                    });
+                });
+            </script>
+</body>
+
+</html>
